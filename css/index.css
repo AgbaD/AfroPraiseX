@@ -100,12 +100,31 @@ section {
     width: 70%;
     text-align: center;
     margin: 30px 15%;
-    border-radius: 5px;
-    background: #4ad837;
-    height: 70vh;
+    border-radius: 13px;
+    background: grey 0.1;
+    border-left: 5px solid red;
+    height: auto;
+    color: #232a34;
+    font-family: Quintessential;
+}
+section h1, section h2 {
+    font-size: 37px;
+    padding-bottom: 10px;
+    padding-left: 15px;
 }
 section h1 {
-    color: white;
-    padding-top: 30px;
-    font-size: 30px;
+    padding-top: 45px;
+}
+section h2.base {
+    padding-bottom: 35px;
+}
+@media (max-width:800px) {
+    section h1, section h2 {
+        font-size: 27px;
+    }
+}
+@media (max-width:485px) {
+    section h1, section h2 {
+        font-size: 20px;
+    }
 }
