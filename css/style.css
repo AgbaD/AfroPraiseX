@@ -1,0 +1,106 @@
+/*--- Main css --*/
+html, body{
+    height: 100%;
+    width: 100%;
+    color: #222;
+    font-family: "Work Sans", sans-serif;
+}
+.jumbotron{
+    background-image: url("../images/back2.jpg");
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    height: 100%;
+    border-radius: 0px !important;
+}
+
+/*--- Changing navbar color when scrolled --*/
+.navbar{
+    padding: .8rem;
+    transition: background-color 200ms linear;
+}
+.navbar.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+}
+.navbar.scrolled .navbar-nav a{
+    color: #222 !important;
+}
+.navbar-brand{
+    color: #ee8228 !important;
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 0 2rem;
+}
+.navbar-nav li{
+    margin-right: 20px;
+}
+.nav-link{
+    font-size: 1em !important;
+    font-weight: 600;
+}
+.navbar-nav a{
+    color: white !important;
+}
+.navbar-nav a:hover{
+    color: #ee8228 !important;
+}
+
+
+
+
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
