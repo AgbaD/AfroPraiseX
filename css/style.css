@@ -27,7 +27,7 @@ html, body{
 .navbar.scrolled .navbar-nav a{
     color: #222 !important;
 }
-.navbar.scrolled .navbar-toggler-icon{
+.navbar.scrolled .navbar-toggler{
     color: #222 !important;
 }
 
@@ -92,31 +92,44 @@ html, body{
     font-size: 17px;
     line-height: 30px;
 }
-#speakers h1{
+#speakers h1, #blog h1{
     font-size: 40px;
     font-weight: 700;
     line-height: 48px;
     margin-bottom: 10px;
 }
-#speakers p{
+#speakers p, #blog p{
     color: rgb(106, 107, 124);
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
     margin-bottom: 0px
 }
-.social a img{
-    height: 20%;
-    padding: 1%;
+.card{
+    padding: 0 !important;
+    border: 0px !important;
 }
-.speaker h3{
-    color: #222 !important;
-    top: 80%;
-    transform: translateY(50%);
-
+.card-body{
+    background: linear-gradient(45deg, #ef812a 0%, 
+    #f26c4e 50%, #f7527b 100%) !important;
+    color: white;
 }
-
-
+.social a{
+    font-size: 1.5em;
+    padding: .2em;
+}
+.social .fab{
+    color: white;
+}
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-linkedin-in:hover,
+.fa-instagram:hover{
+    color: #d5d5d5;
+}
+#post{
+    
+}
 
 
 /*---Media Queries --*/
