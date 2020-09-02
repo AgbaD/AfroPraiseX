@@ -5,12 +5,13 @@ html, body{
     color: #222;
     font-family: "Work Sans", sans-serif;
 }
-.jumbotron{
+.jumbotronHeader{
     background-image: url("../images/back2.jpg");
     background-size: cover;
     background-position: center;
     top: 0;
     height: 100%;
+    margin-bottom: 0;
     border-radius: 0px !important;
 }
 
@@ -20,17 +21,21 @@ html, body{
     transition: background-color 200ms linear;
 }
 .navbar.scrolled {
-    background-color: #fff !important;
+    background-color: #ebe8eb !important;
     transition: background-color 200ms linear;
 }
 .navbar.scrolled .navbar-nav a{
     color: #222 !important;
 }
+.navbar.scrolled .navbar-toggler-icon{
+    color: #222 !important;
+}
+
 .navbar-brand{
     color: #ee8228 !important;
     font-size: 1.8em;
     font-weight: bold;
-    padding: 0 2rem;
+    padding: 0 1.2rem;
 }
 .navbar-nav li{
     margin-right: 20px;
@@ -43,10 +48,73 @@ html, body{
     color: white !important;
 }
 .navbar-nav a:hover{
-    color: #ee8228 !important;
+    border-bottom: 2px solid #ee8228 !important;
 }
+.carousel-caption{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.carousel-caption h2{
+    font-size: 500%;
+    font-weight: 370;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px #000;
+}
+.btn-primary{
+    background: linear-gradient(45deg, #ef812a 0%, 
+    #f26c4e 50%, #f7527b 100%) !important;
+    border: 1px solid #f26c4e;
+    color: white !important;
+}
+.btn-primary:hover{
+    background: linear-gradient(45deg, #ef812a 0%, 
+    #f26c4e 50%, #f7527b 100%) !important;
+    border: 1px solid #f26c4e;
+}
+.jumbotronCount{
+    padding: 1em;
+    border-radius: 0;
+    background: linear-gradient(45deg, #ef812a 0%, 
+    #f26c4e 50%, #f7527b 100%) !important;
+    color: white;
+}
+.jumbotronCount h3{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 38px
+}
+#about .col-lg-6{
+    padding: 3rem;
+}
+#about .info{
+    padding-top: 5rem;
+    font-size: 17px;
+    line-height: 30px;
+}
+#speakers h1{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 10px;
+}
+#speakers p{
+    color: rgb(106, 107, 124);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 0px
+}
+.social a img{
+    height: 20%;
+    padding: 1%;
+}
+.speaker h3{
+    color: #222 !important;
+    top: 80%;
+    transform: translateY(50%);
 
-
+}
 
 
 
