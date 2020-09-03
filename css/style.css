@@ -196,6 +196,21 @@ footer a{
 
 
 /*---Media Queries --*/
+@media (max-width: 856px) {
+    .navbar-nav li{
+        margin-right: 7 px;
+    }
+    .carousel-caption{
+        top: 55%;
+    }
+    .carousel-caption h2{
+        font-size: 350%;
+    }
+    .carousel-caption .btn{
+        font-size: 95%;
+        padding: 8px 14px;
+    }
+}
 @media (max-width: 768px) {
     .carousel-caption{
         top: 55%;
