@@ -72,6 +72,9 @@ html, body{
     #f26c4e 50%, #f7527b 100%) !important;
     border: 1px solid #f26c4e;
 }
+.padding{
+    padding-bottom: 2rem
+}
 .jumbotronCount{
     padding: 1em;
     border-radius: 0;
@@ -92,24 +95,34 @@ html, body{
     font-size: 17px;
     line-height: 30px;
 }
-#speakers h1, #blog h1{
+#speakers h1, #blog h1, #contact h1{
     font-size: 40px;
     font-weight: 700;
     line-height: 48px;
     margin-bottom: 10px;
 }
-#speakers p, #blog p{
+#speakers, #blog, #contact{
+    width: 75%;
+    margin: 0 auto;
+}
+#speakers hr, #blog hr, #contact hr{
+    border-top: 2px solid #b4b4b4;
+    width: 95%;
+    margin-top: .3rem;
+    margin-bottom: 1rem
+}
+#speakers p, #blog p, #contact p{
     color: rgb(106, 107, 124);
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
     margin-bottom: 0px
 }
-.card{
+#card{
     padding: 0 !important;
     border: 0px !important;
 }
-.card-body{
+#card-body{
     background: linear-gradient(45deg, #ef812a 0%, 
     #f26c4e 50%, #f7527b 100%) !important;
     color: white;
@@ -127,8 +140,21 @@ html, body{
 .fa-instagram:hover{
     color: #d5d5d5;
 }
-#post{
-    
+.card{
+    border: 0px !important;
+}
+#post .col-md-6{
+    padding: 0 3rem; 
+}
+.form{
+    margin-top: -3rem;
+    padding: 0 10%;
+}
+.form-control::placeholder{
+    color: #e7e0de;
+}
+input:focus, textarea:focus{
+    border-color: #f26c4e !important;
 }
 
 
