@@ -14,12 +14,12 @@ html, body{
     margin-bottom: 0;
     border-radius: 0px !important;
 }
-
-/*--- Changing navbar color when scrolled --*/
 .navbar{
     padding: .8rem;
     transition: background-color 200ms linear;
 }
+
+/*--- Changing navbar color when scrolled --*/
 .navbar.scrolled {
     background-color: #ebe8eb !important;
     transition: background-color 200ms linear;
@@ -134,11 +134,17 @@ html, body{
 .social .fab{
     color: white;
 }
-.fa-facebook:hover,
-.fa-twitter:hover,
-.fa-linkedin-in:hover,
+.fa-facebook:hover{
+    color: #3b5998;
+}
+.fa-twitter:hover{
+    color: #00aced;
+}
+.fa-linkedin-in:hover{
+    color: #00aced;
+}
 .fa-instagram:hover{
-    color: #d5d5d5;
+    color: #517fa8;
 }
 .card{
     border: 0px !important;
@@ -156,6 +162,13 @@ html, body{
 input:focus, textarea:focus{
     border-color: #f26c4e !important;
 }
+footer{
+    background-color: #171822;
+    color: #d5d5d5;
+    padding-top: 2rem;
+    margin-top: 2rem;
+}
+
 
 
 /*---Media Queries --*/
