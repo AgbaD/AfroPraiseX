@@ -90,10 +90,10 @@ html, body{
     line-height: 38px
 }
 #about .col-lg-6{
-    padding: 3rem;
+    padding: 4rem;
 }
 #about .info{
-    padding-top: 5rem;
+    padding-top: 3rem;
     font-size: 17px;
     line-height: 30px;
 }
