@@ -21,6 +21,8 @@
 		
 		<!-- Css File -->
         <link rel="stylesheet" href="css/register.css" type='text/css' />
+        <!-- JS -->
+		<script src="index.js"></script> 
         <title>
             Vision 2030 | Register  
         </title>
@@ -32,9 +34,6 @@
                 <form class="form-detail" action="#" method="post" id="myform">
                     <div class="form-left">
                         <h2>General Infomation</h2>
-                        <div class="form-row form-row-2">
-                            <input type="text" name="title" id="title" class="input-text" placeholder="Title e.g Mrs." required>
-                        </div>
                         <div class="form-group">
                             <div class="form-row form-row-1">
                                 <input type="text" name="first_name" id="first_name" class="input-text" placeholder="First Name" required>
@@ -43,15 +42,6 @@
                                 <input type="text" name="last_name" id="last_name" class="input-text" placeholder="Last Name" required>
                             </div>
                         </div>
-                        <div class="form-row">
-                            <input type="text" name="status" class="status" id="status" placeholder="Student,CEO etc" required>
-                        </div>
-                        <div class="form-row">
-                            <input type="text" name="company" class="company" id="company" placeholder="Company/School" required>
-                        </div>
-                        <div class="form-row">
-                            <input type="text" name="additional" class="additional" id="additional" placeholder="Additional Information" required>
-                        </div> 
                         <div class="form-row form-row-2">
                             <input type="text" name="phone" class="phone" id="phone" placeholder="Phone Number" required>
                         </div>
@@ -61,33 +51,20 @@
                     </div>
                     <div class="form-right">
                         <h2>Proposal</h2>
-                        <p>In simple sentences, give five reasons you should recieve an invite</p>
+                        <p>In simple sentences, give three reasons you should recieve an invite</p>
                         <div class="form-row">
-                            <input type="text" name="reason" class="reason" id="reason" placeholder="- I am a Man" required>
+                            <input type="text" name="reason" class="reason" id="reason1" placeholder="- I am a Man" required>
                         </div>
                         <div class="form-row">
-                            <input type="text" name="reason" class="reason" id="reason" placeholder="- I am a Genius" required>
+                            <input type="text" name="reason" class="reason" id="reason2" placeholder="- I am a Genius" required>
                         </div>
                         <div class="form-row">
-                            <input type="text" name="reason" class="reason" id="reason" placeholder="- I am God's" required>
-                        </div>
-                        <div class="form-row">
-                            <input type="text" name="reason" class="reason" id="reason" placeholder="- I am a Handsome" required>
-                        </div>
-                        <div class="form-row">
-                            <input type="text" name="reason" class="reason" id="reason" placeholder="- I am Gifted" required>
+                            <input type="text" name="reason" class="reason" id="reason3" placeholder="- I am God's" required>
                         </div>
                         <br />
-                        <p>Upload your Resume or CV</p>
-                        <input type="file" name="user-song" required>
-                        <div class="form-checkbox">
-                            <label class="container"><p>I do accept to recieve further information through mail.</p>
-                                    <input type="checkbox" value="yes" name="checkbox">
-                                    <span class="checkmark"></span>
-                            </label>
-                        </div>
-                        <div class="form-row-last">
-                            <input type="submit" name="register" class="register" value="Request Invite">
+                        <p>Click to upload your proposal</p>
+                            <input type="submit" name="register" class="register" value="Upload Proposal"
+                            onclick="requestInvite()">
                         </div>
                     </div>
                 </form>
