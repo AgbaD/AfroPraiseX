@@ -6,29 +6,32 @@ $(function () {
 });
 
 function requestInvite() {
-  var firstname = document.getElementById("first_name");
-  var lastname = document.getElementById('last_name');
-  var phone = document.getElementById('phone');
-  var email = document.getElementById('your_email');
+  var firstname = encodeURIComponent(document.getElementById("first_name").value);
+  var lastname = encodeURIComponent(document.getElementById('last_name').value);
+  var phone = encodeURIComponent(document.getElementById('phone').value);
+  var email = encodeURIComponent(document.getElementById('your_email').value);
+  var website = encodeURIComponent(document.getElementById('website').value);
+  var subj = "Vision2030 Proposal-" + firstname +" "+lastname;
+  var body = "phone: " + phone + "    website:" + website;
 
-  var lst = ['reason1','reason2','reason3'];
-  var reasons = [];
-  for(var i=0;i<2;i++); {
-   reasons.push(document.getElementById(lst[i]))
-  }
-
-  var body = " " + firstname+" "+lastname + " \n" + phone + "\n" + email;
-  var subject = "Vision2030 Proposal " + firstname+" "+lastname;
-  window.open('mailto:blangodd33@gmail.com?subject=subject&body=body');
+  var req = "mailto:ysf.nrabc@gmail.com"
+             + "?cc=" + email
+             + "&subject=" + subj
+             + "&body=" + body
+  ;
+  window.location.href = req;
 }
 
 function contact() {
-  var fullname = document.getElementById("name");
-  var email = document.getElementById('email');
-  var purpose = document.getElementById('purpose');
-  var message = document.getElementById('message');
-
-  var body = " " + fullname + " \n" + email + " \n" + message;
-  var subject = "Vision2030 "+ purpose + " " + fullname;
-  window.open('mailto:blangodd33@gmail.com?subject=subject&body=body');
+  var fullname = encodeURIComponent(document.getElementById("name").value);
+  var email = encodeURIComponent(document.getElementById('email').value);
+  var purpose = encodeURIComponent(document.getElementById('purpose').value);
+  var message = encodeURIComponent(document.getElementById('message').value);
+  var subj = "Vision2030-"+ purpose + "-" +fullname;
+  var link = "mailto:blankgodd33@gmail.com"
+             + "?cc=" + email
+             + "&subject=" + subj
+             + "&body=" + message
+  ;
+  window.location.href = link;
 }

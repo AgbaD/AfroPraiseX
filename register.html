@@ -46,7 +46,10 @@
                             <input type="text" name="phone" class="phone" id="phone" placeholder="Phone Number" required>
                         </div>
                         <div class="form-row">
-                            <input type="text" name="your_email" id="your_email" class="input-text" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" placeholder="Your Email">
+                            <input type="email" name="your_email" id="your_email" class="input-text" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" placeholder="Your Email">
+                        </div>
+                        <div class="form-row">
+                            <input type="text" name="website" id="website" class="input-text" placeholder="www.me.com" required>
                         </div>
                     </div>
                     <div class="form-right">
@@ -62,6 +65,7 @@
                             <input type="text" name="reason" class="reason" id="reason3" placeholder="- I am God's" required>
                         </div>
                         <br />
+                        <div class="form-row">
                         <p>Click to upload your proposal</p>
                             <input type="submit" name="register" class="register" value="Upload Proposal"
                             onclick="requestInvite()">
